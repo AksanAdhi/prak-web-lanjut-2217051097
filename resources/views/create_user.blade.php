@@ -82,7 +82,11 @@
     }
 </style>
 <body>
-    <form action="{{ route('user.store') }}" method="POST">
+    
+<div class="mb-3 mt-2 m-3">
+        <a href="{{ route('user.list') }}" class="btn btn-success">List User</a>
+    </div>
+    <form action="{{ route('user.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <h1>Buat Akun</h1>
         <img src="/img/Profile icon.png" alt="Profile Image">
