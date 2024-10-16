@@ -1,4 +1,3 @@
-
 @extends('layouts.app')
 
 @section ('content')
@@ -15,6 +14,8 @@
                 <th scope="col">Nama</th>
                 <th scope="col">NPM</th>
                 <th scope="col">Kelas</th>
+                <th scope="col">Foto</th>
+                <th scope="col">Aksi</th>
             </tr>
         </thead>
         <tbody class="table-group-divider">
@@ -27,8 +28,11 @@
                 <td><?= $user['npm'] ?></td>
                 <td><?= $user['nama_kelas'] ?></td>
                 <td>
-                        @csrf
-                    </form>
+                    <img src="{{ asset('storage/uploads/' . $user->foto) }}" alt="Foto User" width="100">
+                </td>
+                <td>
+                    <!-- View -->
+                    <a href="{{ route('user.show', $user->id') }}" class="btn btn-warning mb-3">Detail</a>
                 </td>
             </tr>
             <?php
