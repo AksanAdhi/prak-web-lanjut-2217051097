@@ -12,8 +12,8 @@
             <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Nama</th>
-                <th scope="col">NPM</th>
                 <th scope="col">Kelas</th>
+                <th scope="col">IPK</th>
                 <th scope="col">Foto</th>
                 <th scope="col">Aksi</th>
             </tr>
@@ -25,8 +25,8 @@
             <tr>
                 <td><?= $user['id'] ?></td>
                 <td><?= $user['nama'] ?></td>
-                <td><?= $user['npm'] ?></td>
                 <td><?= $user['nama_kelas'] ?></td>
+                <td><?= $user['ipk'] ?></td>
                 <td>
                     <img src="{{ asset('storage/uploads/' . $user->foto) }}" alt="Foto User" width="100">
                 </td>

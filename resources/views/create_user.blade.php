@@ -15,9 +15,16 @@
                 <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama anda">
             </div>
 
-            <div class="mb-3">
-                <label for="npm" class="form-label">NPM</label>
-                <input type="text" class="form-control" name="npm" id="npm" placeholder="NPM anda">
+                        <div class="mb-3">
+                <label for="ipk" class="form-label">IPK</label>
+                <input type="number" 
+                       class="form-control" 
+                       name="ipk" 
+                       id="ipk" 
+                       step="0.01" 
+                       min="0" 
+                       max="4.00" 
+                       placeholder="Masukkan IPK (0.00 - 4.00)">
             </div>
 
             <label for="kelas">Kelas</label>

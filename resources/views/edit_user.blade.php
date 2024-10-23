@@ -17,12 +17,6 @@
                     placeholder="Nama anda">
             </div>
 
-            <div class="mb-3">
-                <label for="npm" class="form-label">NPM</label>
-                <input type="text" class="form-control" name="npm" id="npm" value="{{ old('npm', $user->npm) }}"
-                    placeholder="NPM anda">
-            </div>
-
             <label for="kelas">Kelas</label>
             <select class="form-select" name="kelas_id" id="kelas_id">
                 @foreach ($kelas as $kelasItem)
@@ -31,6 +25,12 @@
                 </option>
                 @endforeach
             </select><br>
+
+            <div class="mb-3">
+                <label for="ipk" class="form-label">IPK</label>
+                <input type="text" class="form-control" name="ipk" id="ipk" value="{{ old('ipk', $user->ipk) }}"
+                    placeholder="Masukkan IPK">
+            </div>
 
             <div class="mb-3">
                 <label for="foto" class="form-label">Foto</label>
@@ -46,6 +46,4 @@
     </form>
 
 </div>
-
-
 @endsection
