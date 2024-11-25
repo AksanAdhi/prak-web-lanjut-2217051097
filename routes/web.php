@@ -33,3 +33,6 @@ Route::get('/user/list', [UserController::class, 'index'])->name('user.list');
 Route::get('/show{id}', [UserController::class, 'show'])->name('user.show');
 
 Route::get('/user', [UserController::class, 'index']);
+
+
+Route::get('/', [UserController::class, 'index'])->name('user.list');
