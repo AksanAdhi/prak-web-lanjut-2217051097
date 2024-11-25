@@ -52,4 +52,13 @@
         </tbody>
     </table>
 </div>
+
+@if (session('success'))
+    <script>
+    Swal.fire("SweetAlert2 is working!");
+    </script>
+@endif
+
+
+
 @endsection
